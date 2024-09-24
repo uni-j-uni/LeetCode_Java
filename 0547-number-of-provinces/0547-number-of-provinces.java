@@ -17,7 +17,7 @@ class Solution {
         visited[i] = true;
 
         for (int j = 0; j < isConnected[0].length; j++) {
-            if (!visited[j] && isConnected[i][j] != 0) {
+            if (!visited[j] && isConnected[i][j] == 1) {
                 dfs(j, isConnected, visited);
             }
         }
